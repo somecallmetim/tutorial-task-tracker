@@ -1,14 +1,20 @@
-const Button = ({ color, text, onClick}) => {
+const Button = ({ color, text, onClick }) => {
     return (
         <div>
-            <button onClick={onClick} className='btn' style={{backgroundColor: color}}>{text}</button>
+            <button
+                onClick={onClick}
+                className='btn'
+                style={{ backgroundColor: color }}
+            >
+                {text}
+            </button>
         </div>
-    )
-}
+    );
+};
 
 Button.defaultProps = {
-    color: 'steelblue',
-    text: 'Default'
-}
+    color: "steelblue",
+    text: "Default",
+};
 
-export default Button
+export default Button;
